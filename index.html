@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📸 Explore the Gallery</h1>
+    <div class="filter-buttons">
+      <button class="active" onclick="filterImages('all')">All</button>
+      <button onclick="filterImages('nature')">Nature</button>
+      <button onclick="filterImages('animals')">Animals</button>
+      <button onclick="filterImages('architecture')">Architecture</button>
+    </div>
+  </header>
+
+  <main class="gallery-container">
+    <div class="gallery">
+      <img src="images/nature1.jpg" class="gallery-item nature" alt="Nature">
+      <img src="images/animal1.jpg" class="gallery-item animals" alt="Animals"> 
+      <img src="images/architecture1.jpg" class="gallery-item architecture" alt="Architecture">
+      <img src="images/nature2.jpg" class="gallery-item nature" alt="Nature">
+      <img src="images/animal2.jpg" class="gallery-item animals" alt="Animals">
+      <img src="images/architecture2.jpg" class="gallery-item architecture" alt="Architecture">
+      <img src="images/nature3.jpg" class="gallery-item nature" alt="Nature">
+      <img src="images/animal3.jpg" class="gallery-item animals" alt="Animals">
+       <img src="images/architecture3.jpg" class="gallery-item architecture" alt="Architecture">
+    
+    </div>
+  </main>
+
+  <!-- Lightbox View -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img" src="" alt="">
+    <button class="prev" onclick="changeImage(-1)">‹</button>
+    <button class="next" onclick="changeImage(1)">›</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Gallery. Designed by PooJitha.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
